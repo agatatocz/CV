@@ -4,3 +4,13 @@ header {
 .profilePhoto {
   width: 80%;
 }
+
+.content {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .content article {
+  padding: 10px;
+} */
