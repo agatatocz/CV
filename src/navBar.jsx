@@ -14,7 +14,7 @@ class NavBar extends Component {
   render() {
     return (
       <Router>
-        <nav>
+        <nav className="navBar">
           <ul className="nav nav-tabs">
             <li
               className="nav-item nav-link active"

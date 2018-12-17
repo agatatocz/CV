@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./header";
 import NavBar from "./navBar";
 import Content from "./content";
-import Footer from "./Footer";
+import Footer from "./footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends Component {
@@ -18,7 +18,7 @@ class App extends Component {
   renderApp = () => {
     return (
       <React.Fragment>
-        <div className="container">
+        <div className="myContainer">
           <Header />
           <NavBar setContent={this.setContent} />
           <Content content={this.state.content} />

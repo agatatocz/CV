@@ -1,16 +1,70 @@
 header {
-  padding: 20px;
-}
-.profilePhoto {
-  width: 80%;
+  padding: 20px 40px;
+  margin-bottom: 10px;
+
+  /* background-color: #f09178; */
+  background-color: #f08260;
+  /* background-color: #cc4e4e; */
+  /* background-color: #cc3e39; */
+  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
+header h1 {
+  font-size: 45px;
+}
+.profilePhoto {
+  width: 150px;
+  margin: 0 10px;
+  transition: transform 1s;
+}
+
+.profilePhoto:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.content {
+  text-align: justify;
+  padding: 10px;
+  margin-bottom: 200px;
+}
+
+.navBar,
 .content {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* .content article {
-  padding: 10px;
-} */
+.navBar a:hover {
+  text-decoration: none;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.icons-div {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.icons-div i {
+  margin: 0 20px;
+}
+
+.icons-div a {
+  text-decoration: none;
+  color: white;
+}
+
+.icons-div a:hover {
+  color: #f08260;
+}
