@@ -7,8 +7,8 @@ const Content = props => {
     "Nunc pharetra diam tellus, ac gravida lorem lobortis sit amet. Aenean urna ex, volutpat nec metus sed, feugiat pellentesque dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quam turpis, congue nec erat a, blandit mollis felis. Etiam sit amet risus in quam ornare consectetur in id lacus. Nam facilisis tellus erat. Etiam tincidunt gravida dictum. Pellentesque venenatis ex in augue ultrices dictum. Nulla eget justo vulputate, volutpat quam vitae, tempus ligula. Nullam eget massa et nunc accumsan posuere faucibus a nunc. Pellentesque dui nisi, luctus eget lacus quis, cursus vestibulum eros. Praesent euismod egestas arcu eget dictum.";
   const contact = (
     <div style={{ textAlign: "center" }}>
+      <h4>Zapraszam do kontaktu!</h4>
       <p>
-        <h4>Zapraszam do kontaktu!</h4>
         <br />
         telefon: 602 183 121
         <br />
