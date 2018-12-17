@@ -1,3 +1,7 @@
+.myContainer,
+#root {
+  width: 100%;
+}
 header {
   padding: 20px 40px;
   margin-bottom: 10px;
@@ -12,21 +16,23 @@ header {
 
 header h1 {
   font-size: 45px;
+  animation: opacityGrowth 2s ease;
 }
 .profilePhoto {
   width: 150px;
   margin: 0 10px;
   transition: transform 1s;
+  animation: opacityGrowth 2s ease;
 }
 
 .profilePhoto:hover {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.05, 1.05);
 }
 
 .content {
   text-align: justify;
   padding: 10px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .navBar,
@@ -34,6 +40,7 @@ header h1 {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  animation: opacityGrowth 2s ease;
 }
 
 .navBar a:hover {
@@ -58,6 +65,7 @@ footer {
 
 .icons-div i {
   margin: 0 20px;
+  animation: opacityGrowth 2s ease;
 }
 
 .icons-div a {
@@ -67,4 +75,15 @@ footer {
 
 .icons-div a:hover {
   color: #f08260;
+}
+
+@keyframes opacityGrowth {
+  from {
+    opacity: 0;
+    transform: scale(0.8, 0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
 }
