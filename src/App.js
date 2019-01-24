@@ -18,12 +18,10 @@ class App extends Component {
   renderApp = () => {
     return (
       <React.Fragment>
-        <div className="myContainer">
-          <Header />
-          <NavBar setContent={this.setContent} />
-          <Content content={this.state.content} />
-          <Footer />
-        </div>
+        <Header />
+        <NavBar setContent={this.setContent} />
+        <Content content={this.state.content} />
+        <Footer />
       </React.Fragment>
     );
   };
