@@ -23,6 +23,7 @@ const Content = props => {
       wiążę moją przyszłość zawodową.
     </div>
   );
+
   const technologies = (
     <div className="technologies">
       <div className="technologies-item">
@@ -51,6 +52,7 @@ const Content = props => {
       </div>
     </div>
   );
+
   const contact = (
     <div style={{ textAlign: "center" }}>
       <h4>Zapraszam do kontaktu</h4>

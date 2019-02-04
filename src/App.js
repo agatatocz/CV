@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
-import Header from "./header";
-import NavBar from "./navBar";
-import Content from "./content";
-import Footer from "./footer";
+import Header from "./components/header";
+import NavBar from "./components/navBar";
+import Content from "./components/content";
+import Footer from "./components/footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends Component {
   state = {
-    content: "o mnie"
+    content: ""
   };
 
   setContent = content => {
