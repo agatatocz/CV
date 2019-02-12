@@ -51,8 +51,18 @@ header h1 {
   animation: opacityGrowth 2s ease;
 }
 
-.navBar a:hover {
-  text-decoration: none;
+.navBar li.nav-link,
+.navBar li.nav-link.active {
+  color: #2b93ff;
+  font-weight: 400;
+}
+
+.navBar li.nav-link:hover {
+  cursor: pointer;
+}
+
+.navBar li.nav-link.active {
+  font-weight: 500;
 }
 
 .technologies {
@@ -99,6 +109,7 @@ footer {
 .icons-div a {
   text-decoration: none;
   color: white;
+  transition: 0.5s ease;
 }
 
 .icons-div a:hover {

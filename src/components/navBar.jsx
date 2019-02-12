@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
 
 class NavBar extends Component {
   handleClick = (e, content) => {
@@ -13,30 +12,28 @@ class NavBar extends Component {
 
   render() {
     return (
-      <Router>
-        <nav className="navBar">
-          <ul className="nav nav-tabs">
-            <li
-              className="nav-item nav-link active"
-              onClick={e => this.handleClick(e, "o mnie")}
-            >
-              <Link to="/">O mnie</Link>
-            </li>
-            <li
-              className="nav-item nav-link"
-              onClick={e => this.handleClick(e, "technologie")}
-            >
-              <Link to="/technologie">Technologie</Link>
-            </li>
-            <li
-              className="nav-item nav-link"
-              onClick={e => this.handleClick(e, "kontakt")}
-            >
-              <Link to="/kontakt">Kontakt</Link>
-            </li>
-          </ul>
-        </nav>
-      </Router>
+      <nav className="navBar">
+        <ul className="nav nav-tabs">
+          <li
+            className="nav-item nav-link active"
+            onClick={e => this.handleClick(e, "o mnie")}
+          >
+            O mnie
+          </li>
+          <li
+            className="nav-item nav-link"
+            onClick={e => this.handleClick(e, "technologie")}
+          >
+            Technologie
+          </li>
+          <li
+            className="nav-item nav-link"
+            onClick={e => this.handleClick(e, "kontakt")}
+          >
+            Kontakt
+          </li>
+        </ul>
+      </nav>
     );
   }
 }

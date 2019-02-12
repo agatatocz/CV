@@ -4,7 +4,6 @@ import Header from "./components/header";
 import NavBar from "./components/navBar";
 import Content from "./components/content";
 import Footer from "./components/footer";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends Component {
   state = {
@@ -15,7 +14,7 @@ class App extends Component {
     this.setState({ content });
   };
 
-  renderApp = () => {
+  render() {
     return (
       <React.Fragment>
         <Header />
@@ -23,18 +22,6 @@ class App extends Component {
         <Content content={this.state.content} />
         <Footer />
       </React.Fragment>
-    );
-  };
-
-  render() {
-    return (
-      <Router>
-        <Switch>
-          <Route path="/kontakt" render={() => this.renderApp()} />
-          <Route path="/technologie" render={() => this.renderApp()} />
-          <Route path="/" render={() => this.renderApp()} />
-        </Switch>
-      </Router>
     );
   }
 }
