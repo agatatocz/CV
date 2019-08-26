@@ -3,24 +3,24 @@ import React from "react";
 const About = () => {
   return (
     <div className="about">
-      Jestem studentką trzeciego roku Informatyki na Politechnice Wrocławskiej.
-      Od dwóch lat interesuję się zagadnieniem projektowania i tworzenia stron
-      internetowych oraz uczę się programowania webowego. Niedawno miałam
-      przyjemność wziąć udział w kursie Coders Camp prowadzonym przez
-      wrocławskie stowarzyszenie
-      <a
-        rel="noopener noreferrer"
-        href="https://coderscrew.pl/"
-        target="_blank"
-        className="inlineLink"
-      >
-        {" "}
-        Coders Crew
-      </a>
-      , co pomogło mi utrwalić zdobyte do tej pory umiejętności i poznać
-      technologie, z którymi wcześniej nie pracowałam. Największą przyjemność
-      sprawia mi pisanie warstwy front-endowej aplikacji webowych i z tym też
-      wiążę moją przyszłość zawodową.
+      <p>
+        Jestem studentką czwartego roku Informatyki na Politechnice
+        Wrocławskiej. Od ponad dwóch lat interesuję się zagadnieniem
+        projektowania i tworzenia aplikacji internetowych oraz uczę się
+        programowania webowego. Do tej pory pracowałam przy dwóch większych
+        projektach zespołowych, w których pełniałam rolę front-end developera.
+      </p>
+      <p>
+        Cechuje mnie duże zaangażowanie w projekty, którymi się zajmuję oraz
+        nieustanna chęć zdobywania nowej wiedzy. Staram się być na bierząco z
+        nowościami w świecie JavaScriptu i Reacta oraz szukać ludzi równie
+        zafascynowanych tym obszarem informatyki.
+      </p>
+      <p>
+        Jestem także komunikatywna, uwielbiam pracę w zespole, ponieważ wiem, że
+        na prawdę imponujące osiągnięcia są wynikiem współpracy ludzi, a nie
+        zapału jednostki.
+      </p>
     </div>
   );
 };
