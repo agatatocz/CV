@@ -25,12 +25,24 @@ const Technologies = () => {
         path={`${process.env.PUBLIC_URL}/img/redux.png`}
       />
       <TechnologyItem
+        name="TypeScript"
+        path={`${process.env.PUBLIC_URL}/img/ts.png`}
+      />
+      <TechnologyItem
         name="npm"
         path={`${process.env.PUBLIC_URL}/img/npm.png`}
       />
       <TechnologyItem
         name="git"
         path={`${process.env.PUBLIC_URL}/img/git.png`}
+      />
+      <TechnologyItem
+        name="Material UI"
+        path={`${process.env.PUBLIC_URL}/img/mui.png`}
+      />
+      <TechnologyItem
+        name="Semantic UI"
+        path={`${process.env.PUBLIC_URL}/img/sui.png`}
       />
     </div>
   );
