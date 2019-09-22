@@ -2,12 +2,17 @@ import React from "react";
 import About from "./about";
 import Contact from "./contact";
 import Technologies from "./technologies";
+import Projects from "./projects";
 
 const Content = props => {
   let display;
   switch (props.content) {
     case "technologie":
       display = <Technologies />;
+      break;
+
+    case "projekty":
+      display = <Projects />;
       break;
 
     case "kontakt":

@@ -28,6 +28,12 @@ class NavBar extends Component {
           </li>
           <li
             className="nav-item nav-link"
+            onClick={e => this.handleClick(e, "projekty")}
+          >
+            Projekty
+          </li>
+          <li
+            className="nav-item nav-link"
             onClick={e => this.handleClick(e, "kontakt")}
           >
             Kontakt
