@@ -1,8 +1,8 @@
 import React from "react";
-import About from "./about";
-import Contact from "./contact";
-import Technologies from "./technologies";
-import Projects from "./projects";
+import About from "./About";
+import Contact from "./Contact";
+import Technologies from "./Technologies";
+import Projects from "./Projects";
 import tabs from "../data/tabs";
 
 const getContent = content => {

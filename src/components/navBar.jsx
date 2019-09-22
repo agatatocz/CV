@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Tab from "./tab";
+import Tab from "./Tab";
 import tabs from "../data/tabs";
 
 const NavBar = ({ setContent }) => {

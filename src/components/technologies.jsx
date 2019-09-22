@@ -1,5 +1,5 @@
 import React from "react";
-import TechnologyItem from "./technologyItem";
+import TechnologyItem from "./TechnologyItem";
 import technologies from "../data/technologies";
 
 const Technologies = () => {
