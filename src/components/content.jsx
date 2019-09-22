@@ -3,27 +3,26 @@ import About from "./about";
 import Contact from "./contact";
 import Technologies from "./technologies";
 import Projects from "./projects";
+import tabs from "../data/tabs";
 
-const Content = props => {
-  let display;
-  switch (props.content) {
-    case "technologie":
-      display = <Technologies />;
-      break;
+const getContent = content => {
+  switch (content) {
+    case tabs.technologies:
+      return <Technologies />;
 
-    case "projekty":
-      display = <Projects />;
-      break;
+    case tabs.projects:
+      return <Projects />;
 
-    case "kontakt":
-      display = <Contact />;
-      break;
+    case tabs.contact:
+      return <Contact />;
 
     default:
-      display = <About />;
-      break;
+      return <About />;
   }
+};
 
+const Content = ({ content }) => {
+  let display = getContent(content);
   return <article className="content">{display}</article>;
 };
 

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import tabs from "../data/tabs";
 
 class NavBar extends Component {
   handleClick = (e, content) => {
@@ -16,25 +17,25 @@ class NavBar extends Component {
         <ul className="nav nav-tabs">
           <li
             className="nav-item nav-link active"
-            onClick={e => this.handleClick(e, "o mnie")}
+            onClick={e => this.handleClick(e, tabs.about)}
           >
             O mnie
           </li>
           <li
             className="nav-item nav-link"
-            onClick={e => this.handleClick(e, "technologie")}
+            onClick={e => this.handleClick(e, tabs.technologies)}
           >
             Technologie
           </li>
           <li
             className="nav-item nav-link"
-            onClick={e => this.handleClick(e, "projekty")}
+            onClick={e => this.handleClick(e, tabs.projects)}
           >
             Projekty
           </li>
           <li
             className="nav-item nav-link"
-            onClick={e => this.handleClick(e, "kontakt")}
+            onClick={e => this.handleClick(e, tabs.contact)}
           >
             Kontakt
           </li>
