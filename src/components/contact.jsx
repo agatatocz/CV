@@ -1,16 +1,10 @@
 import React from "react";
+import renderHTML from "react-render-html";
+import contact from "../data/contact";
 
 const Contact = () => {
   return (
-    <div style={{ textAlign: "center" }}>
-      <h4>Zapraszam do kontaktu</h4>
-      <p>
-        <br />
-        telefon: 602 183 121
-        <br />
-        e-mail: agatatocz@gmail.com
-      </p>
-    </div>
+    <div style={{ textAlign: "center" }}>{renderHTML(contact.textHTML)}</div>
   );
 };
 
