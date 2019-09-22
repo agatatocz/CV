@@ -1,48 +1,28 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
+import Tab from "./tab";
 import tabs from "../data/tabs";
 
-class NavBar extends Component {
-  handleClick = (e, content) => {
-    let items = document.getElementsByTagName("li");
-    for (let i = 0; i < items.length; i++)
-      items[i].className = items[i].className.replace("active", "");
+const NavBar = ({ setContent }) => {
+  const [active, setActive] = useState(tabs.about);
 
-    e.currentTarget.className += " active";
-    this.props.setContent(content);
+  const handleClick = tab => {
+    setActive(tab);
+    setContent(tab);
   };
 
-  render() {
-    return (
-      <nav className="navBar">
-        <ul className="nav nav-tabs">
-          <li
-            className="nav-item nav-link active"
-            onClick={e => this.handleClick(e, tabs.about)}
-          >
-            O mnie
-          </li>
-          <li
-            className="nav-item nav-link"
-            onClick={e => this.handleClick(e, tabs.technologies)}
-          >
-            Technologie
-          </li>
-          <li
-            className="nav-item nav-link"
-            onClick={e => this.handleClick(e, tabs.projects)}
-          >
-            Projekty
-          </li>
-          <li
-            className="nav-item nav-link"
-            onClick={e => this.handleClick(e, tabs.contact)}
-          >
-            Kontakt
-          </li>
-        </ul>
-      </nav>
-    );
-  }
-}
+  return (
+    <nav className="navBar">
+      <ul className="nav nav-tabs">
+        {Object.values(tabs).map(tab => (
+          <Tab
+            tab={tab}
+            active={active === tab}
+            onClick={() => handleClick(tab)}
+          />
+        ))}
+      </ul>
+    </nav>
+  );
+};
 
 export default NavBar;

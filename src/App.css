@@ -65,6 +65,10 @@ header h1 {
   font-weight: 500;
 }
 
+.navBar li.nav-link::first-letter {
+  text-transform: capitalize;
+}
+
 .technologies {
   display: flex;
   justify-content: space-evenly;
