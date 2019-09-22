@@ -4,7 +4,7 @@ import projects from "../data/projects";
 
 const Projects = () => {
   return (
-    <div className="about">
+    <div className="container">
       <h2>{projects.nokia.title}</h2>
       {renderHTML(projects.nokia.descriptionHTML)}
       <h2>{projects.intive.title}</h2>
